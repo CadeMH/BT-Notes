@@ -1,38 +1,95 @@
+* {
+  color: #292929;
+}
+
 .App {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.grid-container {
+  display:inline-grid;
+  width: 400px;
+  padding: 10px;
+}
+.grid-container a{
+  text-decoration: none;
+  width: 400px;
+}
+
+.notes-list {
+  background-color: #fdff98;
+  border: 2px solid black;
+  font-size: 20px;
+  height: 245px;
+}
+.notes-list:hover {
+  box-shadow: 5px 5px 10px black;
+}
+.notes-list h2 {
   text-align: center;
+  font-size: 30px;
+  color: black;
+  border-bottom: 3px solid black;
+  margin-bottom: 0%;
+  word-wrap:break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.notes-list p{
+  height:165px;
+  color: black;
+  margin-top: 0%;
+  word-wrap:break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note-details{
+  font-size: 20px;
+  word-wrap:break-word;
+  white-space: pre-wrap;
+}
+.note-details h2 {
+  font-size: 30px;
+  color: #35acf1;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background: #35acf1;
   color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 5px 5px 10px black;
 }
 
-.App-link {
-  color: #61dafb;
+input, textarea{
+  width: 25%;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  height: 150px;
 }
