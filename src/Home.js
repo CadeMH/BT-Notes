@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { api } from './CallAPI';
 
 const Home = () => {
-  const [notes, setNotes] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [title, setTitle] = useState('')
-  const [noteText, setNoteText] = useState('')
+  const [notes, setNotes] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [title, setTitle] = useState('');
+  const [noteText, setNoteText] = useState('');
 
   // Populate "notes" with data from API
   useEffect(() => {
